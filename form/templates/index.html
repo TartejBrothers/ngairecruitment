@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGAI Recruitment</title>
+    <link rel="icon" type=“image/x-icon” href="{% static 'Robo.png' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'zoho.css' %}" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <img src="{% static 'logo.png' %}" alt="logo" /><a href="#footer"
+          ><button>Contact Us</button></a
+        >
+      </div>
+      <div class="forms">
+        <form method="POST">
+          {% csrf_token %} {{form.as_p}}
+          <input type="submit" value="Save" id="savebutton" />
+        </form>
+      </div>
+    </div>
+    <div
+      class="nav"
+      style="padding: 20px; justify-content: center; flex-direction: column"
+      id="footer"
+    >
+      <div class="socials">
+        Instagram
+        <a href="https://www.instagram.com/next_gen.ai/"
+          ><img src="{% static 'instagram.png' %}"
+        /></a>
+      </div>
+      <div class="socials" id="mail">
+        For Queries Mail Us at <b>nextgenai@srmist.edu.in</b>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
