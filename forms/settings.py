@@ -15,7 +15,7 @@ SECRET_KEY = "django-insecure-e_l97ivi7@r(5_2gyf=@c26e)sk$jqqdh@7h(=9(awm9n_za2m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app","","127.0.0.1"]
+ALLOWED_HOSTS = [".vercel.app", "", "127.0.0.1"]
 
 
 # Application definition
@@ -71,7 +71,16 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "railway",
+#         "USER": "postgres",
+#         "PASSWORD": "Q5mbroJpONVNgDDzsMGN",
+#         "HOST": "containers-us-west-50.railway.app",
+#         "PORT": "7195",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -108,7 +117,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "form/templates/static/"),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATIC_ROOTS = os.path.join(BASE_DIR, "staticfiles_build", "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
