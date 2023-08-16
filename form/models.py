@@ -19,7 +19,7 @@ class Values(models.Model):
     name = models.TextField()
     reg = models.TextField()
     dept = models.TextField()
-    domain = models.CharField(max_length=40, choices=domains)
+    domain = models.CharField(max_length=35, choices=domains)
     email = models.TextField()
     phone = models.TextField()
     reason = models.TextField()

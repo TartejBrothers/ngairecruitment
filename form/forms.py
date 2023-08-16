@@ -18,7 +18,7 @@ class add_data(forms.ModelForm):
             "domain": forms.Select(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 250px; background:#3C3C3C; margin-bottom:10px; border:none; font-size:16px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 80%; background:#3C3C3C; margin-bottom:10px; border:none; font-size:16px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Registration Number",
                 },
                 choices=(
