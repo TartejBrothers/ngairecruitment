@@ -15,14 +15,14 @@ class add_data(forms.ModelForm):
             "name": TextInput(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 65%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 50%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Name",
                 }
             ),
             "domain": forms.Select(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 65%; background:#3C3C3C; margin-bottom:10px; border:none; font-size:16px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 50%; background:#3C3C3C; margin-bottom:10px; border:none; font-size:16px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Registration Number",
                 },
                 choices=(
@@ -45,35 +45,35 @@ class add_data(forms.ModelForm):
             "reg": TextInput(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 65%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 50%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Registration Number",
                 }
             ),
             "dept": TextInput(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 65%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 50%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Department",
                 }
             ),
             "email": EmailInput(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 65%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 50%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Email",
                 }
             ),
             "phone": NumberInput(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 65%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 50%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Phone",
                 }
             ),
             "reason": TextInput(
                 attrs={
                     "class": "form-control",
-                    "style": "max-width: 65%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
+                    "style": "max-width: 50%; min-width:50vw; background:#3C3C3C; margin-bottom:10px; border:none; font-size:20px;color: white; opacity:0.8; padding:10px",
                     "placeholder": "Reason To Join",
                 }
             ),
