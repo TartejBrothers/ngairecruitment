@@ -7,10 +7,10 @@ domains = (
     ("Management", "Management"),
     ("Public Relations", "Public Relations"),
     ("Computer Vision", "Computer Vision"),
-    ("Natural Language Processing", "Natural Language Processing"),
-    ("Machine Learing & Deep Learning", "Machine Learing & Deep Learning"),
+    ("NLP", "NLP"),
+    ("Machine Learning","Machine Learning"),
     ("Cyber Security", "Cyber Security"),
-    ("Web & App Development", "Web & App Development"),
+    ("Web & App", "Web & App"),
     ("AR/VR", "AR/VR"),
 )
 
