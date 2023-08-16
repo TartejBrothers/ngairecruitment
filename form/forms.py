@@ -7,6 +7,10 @@ class add_data(forms.ModelForm):
     class Meta:
         model = Values
         fields = ["name", "reg", "dept", "domain", "email", "phone", "reason"]
+        labels = {
+            "name": ("Name"),
+            "reason": ("Why do you want to join?"),
+        }
         widgets = {
             "name": TextInput(
                 attrs={
