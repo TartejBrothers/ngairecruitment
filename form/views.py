@@ -12,6 +12,6 @@ def home(request):
     if form.is_valid():
         form.save()
         form = add_data()
-        return redirect("https://ngairecruitment.web.app/")
+        return redirect("https://ngairecruitment.web.app/submitted")
     dict5 = {"form": form}
     return render(request, "index.html", dict5)
