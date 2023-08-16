@@ -5,15 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NGAI Recruitment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type=“image/png”
     href="https://drive.google.com/uc?export=view&id=1ADuqSzTd56MTFwgSx8OW61tL-Y0HN3-9"
     />
-    <link rel="stylesheet" type="text/css" href="{% static 'zoho.css' %}" />
   </head>
   <style>
     * {
       margin: 0;
       padding: 0;
+      font-family: "Poppins", sans-serif;
     }
     html {
       background-color: black;
@@ -23,10 +29,17 @@
       display: flex;
       justify-content: center;
       padding: 20px 0px 20px 0;
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      width: 80%;
     }
 
     .forms label {
       font-size: 20px;
+      display: flex;
+      padding: 10px;
+      justify-content: left;
+      width: 100%;
       color: white;
       opacity: 0.8;
       font-family: "Courier New", Courier, monospace;
@@ -43,6 +56,8 @@
       font-size: 20px;
       border-radius: 20px;
       color: white;
+      margin: 10px 0 0 0;
+      width: 100%;
     }
     ::placeholder {
       color: white;
@@ -115,11 +130,28 @@
       gap: 10px;
       margin-bottom: 10px;
     }
+    .body h1 {
+      font-size: 24px;
+      opacity: 0.8;
+      color: #ffffff;
+      margin: 0 0 15px 0;
+    }
+    .body {
+      flex-direction: column;
+
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 10px 20px 10px;
+    }
     .socials img {
       height: 30px;
       margin-bottom: -8px;
     }
-
+    @media screen and (min-width: 801px) {
+    }
     @media screen and (max-width: 800px) {
       #mail {
         flex-direction: column;
@@ -138,11 +170,14 @@
           alt="logo"
         /><a href="#footer"><button>Contact Us</button></a>
       </div>
-      <div class="forms">
-        <form method="POST">
-          {% csrf_token %} {{form.as_p}}
-          <input type="submit" value="Save" id="savebutton" />
-        </form>
+      <div class="body">
+        <h1>Fill In Your Details</h1>
+        <div class="forms">
+          <form method="POST">
+            {% csrf_token %} {{form.as_p}}
+            <input type="submit" value="Save" id="savebutton" />
+          </form>
+        </div>
       </div>
     </div>
     <div
