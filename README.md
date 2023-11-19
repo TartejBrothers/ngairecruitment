@@ -1,7 +1,7 @@
 <h1>NGAI Recruitment</h1>
 <hr><p>This is a website made for submitting data for the users to fill up the a registration form for a club recruitment.</p><h2>General Information</h2>
 <hr><ul>
-<li>The site is like a Google Form.</li>
+<li>The site is works as a custom form for recruitment</li>
 </ul><ul>
 <li>The data is saved using PostGreSql</li>
 </ul><ul>
@@ -14,6 +14,12 @@
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
 <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> 
+</ul><h2>Important Links</h2>
+<hr><ul>
+<li>Website Link : https://ngairecruitment.web.app/</li>
+</ul><ul>
+<li>As the form has been closed, here is just the form link : https://ngairecruitments.vercel.app/</li>
+</ul>
 </ul><h2>Features</h2>
 <hr><ul>
 <li>Export data as CSV</li>
