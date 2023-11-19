@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGAI Recruitment</title>
+    <link rel="icon" type=“image/x-icon” href="Robo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="zoho.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <img src="logo.png" alt="logo" /><a href="#footer"
+          ><button>Contact Us</button></a
+        >
+      </div>
+      <div class="forms">
+        <div class="box">
+          <h1>Welcome to Next Gen AI</h1>
+          <p>
+            Recruitments Are Over
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="nav"
+      style="padding: 20px; justify-content: center; flex-direction: column"
+      id="footer"
+    >
+      <div class="socials">
+        Instagram
+        <a href="https://www.instagram.com/next_gen.ai/"
+          ><img src="instagram.png"
+        /></a>
+      </div>
+      <div class="socials" id="mail">
+        For Queries Mail Us at <b>nextgenai@srmist.edu.in</b>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

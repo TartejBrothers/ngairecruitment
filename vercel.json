@@ -23,5 +23,6 @@
       "src": "/(.*)",
       "dest": "forms/wsgi.py"
     }
-  ]
+  ],
+  "outputDirectory": "staticfiles"
 }

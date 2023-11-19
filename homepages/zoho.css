@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  background-color: black;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.forms {
+  height: calc(100vh - 200px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  width: 100%;
+  height: 100%;
+
+  background: rgb(152, 4, 140);
+  background: linear-gradient(
+    180deg,
+    rgba(152, 4, 140, 1) 0%,
+    rgba(27, 2, 25, 1) 100%
+  );
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  height: 100%;
+}
+.main iframe {
+  height: 100%;
+}
+iframe::-webkit-scrollbar {
+  display: none;
+}
+iframe {
+  height: 2000px;
+  width: 100%;
+}
+.nav img {
+  height: 90px;
+}
+.nav {
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px 0 30px;
+  color: #d9d9d9;
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+}
+.nav button {
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  width: fit-content;
+  min-width: 120px;
+  background: #630a5c;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.Uc2NEf {
+  background-color: #630a5c;
+  width: 100%;
+}
+.teQAzf {
+  background-color: #630a5c;
+  width: 100vw;
+}
+.box p {
+  margin: 20px 20px 0 20px;
+  color: #48abe0;
+}
+.box {
+  -webkit-box-shadow: 0px 0px 65px 10px rgba(41, 12, 41, 0.86);
+  -moz-box-shadow: 0px 0px 65px 10px rgba(41, 12, 41, 0.86);
+  box-shadow: 0px 0px 65px 10px rgba(41, 12, 41, 0.86);
+  margin: 20px 20px 20px 20px;
+  border-radius: 20px;
+  border: 1px solid #b8b8b8;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 20px;
+  margin-top: 25px;
+  background: rgb(50, 50, 50);
+  color: #ffffff;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 30px;
+  cursor: pointer;
+}
+@keyframes shadows {
+  0% {
+    text-shadow: #48abe0 0 0 30px;
+  }
+  50% {
+    text-shadow: blueviolet 0 0 30px;
+  }
+  75% {
+    text-shadow: rebeccapurple 0 0 30px;
+  }
+  100% {
+    text-shadow: #48abe0 0 0 30px;
+  }
+}
+.box button {
+  margin-top: 20px;
+  border: none;
+  background-color: #1a1a1a;
+  width: 150px;
+  border-radius: 20px;
+  padding: 15px 30px 15px 30px;
+  color: rgb(255, 142, 5);
+  animation: shadows 2s infinite;
+  text-shadow: rebeccapurple 0 0 10px;
+  font-size: 20px;
+}
+.socials {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  height: 50px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.socials img {
+  height: 30px;
+  margin-bottom: -8px;
+}
+
+@media screen and (max-width: 800px) {
+  #mail {
+    flex-direction: column;
+  }
+}
